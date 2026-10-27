@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Show the image of the child product matching the active layered navigation filters -->
+    <type name="Magento\Catalog\Block\Product\AbstractProduct">
+        <plugin name="Amweb_listing_filter_image"
+                type="Amweb\SwatchImage\Plugin\ReplaceListingImageByFilter"
+                sortOrder="100"/>
+    </type>
+    <type name="Amweb\SwatchImage\Plugin\ReplaceListingImageByFilter">
+        <arguments>
+            <argument name="filterCodes" xsi:type="array">
+                <item name="color_family" xsi:type="string">color_family</item>
+                <item name="color" xsi:type="string">color</item>
+                <item name="size" xsi:type="string">size</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
