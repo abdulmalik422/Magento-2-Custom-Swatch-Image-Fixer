@@ -100,6 +100,5 @@ SwatchImage/
 
 ---
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
+## 👨‍💻 Developer & Freelance Enquiries
+Developed as part of a custom Magento 2 backend integration project. If you are looking for custom Magento 2 extension development, API integrations, or performance optimization, feel free to reach out!
